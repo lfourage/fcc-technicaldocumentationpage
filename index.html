@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Chess Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Technical Documentation on Chess</header>
+      <ol>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Rules">Rules</a></li>
+        <li><a class="nav-link" href="#Movement">Movement</a></li>
+        <li><a class="nav-link" href="#MetaGame">MetaGame</a></li>
+        <li><a class="nav-link" href="#Ressources">Ressources</a></li>
+      </ol>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          Chess is an abstract strategy board game for two players which
+          involves no hidden information and no elements of chance.
+        </p>
+        <p>
+          The modern rules of chess emerged in Europe at the end of the 15th
+          century, with standardization and universal acceptance by the end of
+          the 19th century. Today, chess is one of the world's most popular
+          games, with millions of players worldwide.
+        </p>
+      </section>
+      <section class="main-section" id="Rules">
+        <header>Rules</header>
+        <p>
+          The rules of chess are published by FIDE (Fédération Internationale
+          des Échecs; "International Chess Federation"), chess's world governing
+          body, in its Handbook. Rules published by national governing bodies,
+          or by unaffiliated chess organizations, commercial publishers, etc.,
+          may differ in some details. FIDE's rules were most recently revised in
+          2023.
+        </p>
+        <p>
+          It is played on a square game board called a chessboard containing 64
+          squares arranged in an 8×8 grid. The players, referred to as "White"
+          and "Black", each control sixteen pieces: one king, one queen, two
+          rooks, two bishops, two knights, and eight pawns; each type of piece
+          has a different pattern of movement. An enemy piece may be "captured"
+          (removed from the board) by moving one's own piece onto the square it
+          occupies; the object of the game is to "checkmate" (threaten with
+          inescapable capture) the enemy king. There are also several ways a
+          game can end in a draw.
+        </p>
+        <p>
+          To start the game, White's pieces are placed on the first rank in the
+          following order, from left to right: rook, knight, bishop, queen,
+          king, bishop, knight, rook. Pawns are placed on each square of the
+          second rank. Black's position mirrors White's, with equivalent pieces
+          on every file. The board is oriented so that the right-hand corner
+          nearest each player is a light square; as a result the white queen
+          always starts on a light square, while the black queen starts on a
+          dark square. This may be remembered by the phrases "white on the
+          right" and "queen on her color".
+        </p>
+        <p>
+          White moves first, after which players alternate turns. One piece is
+          moved per turn (except when castling, during which two pieces are
+          moved). In the diagrams, dots mark the squares to which each type of
+          piece can move if unoccupied by friendly pieces and there are no
+          intervening piece(s) of either color (except the knight, which leaps
+          over any intervening pieces). With the sole exception of en passant, a
+          piece captures an enemy piece by moving to the square it occupies,
+          removing it from play and taking its place. The pawn is the only piece
+          that does not capture the way it moves, and it is the only piece that
+          moves and captures in only one direction (forwards from the player's
+          perspective). A piece is said to control empty squares on which it
+          could capture, attack squares with enemy pieces it could capture, and
+          defend squares with pieces of the same color on which it could
+          recapture. Moving is compulsory; a player may not skip a turn, even
+          when having to move is detrimental.
+        </p>
+      </section>
+      <section class="main-section" id="Movement">
+        <header>Movement</header>
+        <ul>
+          <li>
+            The king moves one square in any direction. There is also a special
+            move called castling which moves the king and a rook. The king is
+            the most valuable piece—it is illegal to play any move that puts
+            one's king under attack by an opponent piece. A move that attacks
+            the king must be parried immediately; if this cannot be done, the
+            game is lost.
+          </li>
+          <li>
+            A rook can move any number of squares along a rank or file. A rook
+            is involved in the king's castling move.
+          </li>
+          <li>A bishop can move any number of squares diagonally.</li>
+          <li>
+            A queen combines the power of a rook and bishop and can move any
+            number of squares along a rank, file, or diagonal.
+          </li>
+          <li>
+            A knight moves to any of the closest squares that are not on the
+            same rank, file, or diagonal. (Thus the move forms an "L"-shape: two
+            squares vertically and one square horizontally, or two squares
+            horizontally and one square vertically.) The knight is the only
+            piece that can leap over other pieces.
+          </li>
+          <li>
+            A pawn can move forward to the unoccupied square immediately in
+            front of it on the same file, or on its first move it can optionally
+            advance two squares along the same file, provided both squares are
+            unoccupied (diagram dots). A pawn can capture an opponent's piece on
+            a square diagonally in front of it by moving to that square (diagram
+            crosses). It cannot capture a piece while advancing along the same
+            file, nor can it move to either square diagonally in front without
+            capturing. Pawns have two special moves: the en passant capture and
+            promotion.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="MetaGame">
+        <header>MetaGame</header>
+        <h3>Strategy</h3>
+        <p>
+          Chess strategy is concerned with the evaluation of chess positions and
+          with setting up goals and long-term plans for future play. During the
+          evaluation, players must take into account numerous factors such as
+          the value of the pieces on the board, control of the center and
+          centralization, the pawn structure, king safety, and the control of
+          key squares or groups of squares (for example, diagonals, open files,
+          and dark or light squares).
+        </p>
+        <p>
+          The most basic step in evaluating a position is to count the total
+          value of pieces of both sides. The point values used for this purpose
+          are based on experience; usually, pawns are considered worth one
+          point, knights and bishops about three points each, rooks about five
+          points (the value difference between a rook and a bishop or knight
+          being known as the exchange), and queens about nine points. The king
+          is more valuable than all of the other pieces combined, since its
+          checkmate loses the game, but is still capable as a fighting piece; in
+          the endgame, the king is generally more powerful than a bishop or
+          knight but less powerful than a rook. These basic values are then
+          modified by other factors like position of the piece (e.g. advanced
+          pawns are usually more valuable than those on their initial squares),
+          coordination between pieces (e.g. a pair of bishops usually coordinate
+          better than a bishop and a knight), or the type of position (e.g.
+          knights are generally better in closed positions with many pawns while
+          bishops are more powerful in open positions).
+        </p>
+        <p>
+          Another important factor in the evaluation of chess positions is pawn
+          structure (sometimes known as the pawn skeleton): the configuration of
+          pawns on the chessboard. Since pawns are the least mobile of the
+          pieces, pawn structure is relatively static and largely determines the
+          strategic nature of the position. Weaknesses in pawn structure include
+          isolated, doubled, or backward pawns and holes; once created, they are
+          often permanent. Care must therefore be taken to avoid these
+          weaknesses unless they are compensated by another valuable asset (for
+          example, by the possibility of developing an attack).
+        </p>
+        <h3>Tactics</h3>
+        <p>
+          In chess, tactics generally refer to short-term maneuvers – so
+          short-term that they can be calculated in advance by a human player.
+          The possible depth of calculation depends on the player's ability. In
+          quiet positions with many possibilities on both sides, a deep
+          calculation is more difficult and may not be practical, while in
+          positions with a limited number of forced variations, strong players
+          can calculate long sequences of moves.
+        </p>
+        <p>
+          Theoreticians describe many elementary tactical methods and typical
+          maneuvers, for example: pins, forks, skewers, batteries, discovered
+          attacks (especially discovered checks), zwischenzugs, deflections,
+          decoys, sacrifices, underminings, overloadings, and interferences.
+          Simple one-move or two-move tactical actions threats, exchanges of
+          material, and double attacks can be combined into longer sequences of
+          tactical maneuvers that are often forced from the point of view of one
+          or both players. A forced variation that involves a sacrifice and
+          usually results in a tangible gain is called a combination. Brilliant
+          combinations such as those in the Immortal Game are considered
+          beautiful and are admired by chess lovers.
+        </p>
+        <p>
+          A common type of chess exercise, aimed at developing players' tactical
+          skills, is a position where a combination is available and the
+          challenge is to find it. Such positions are usually taken from actual
+          games or from analysis of actual games. Solutions usually result in
+          checkmate, decisive advantage, or successful defense. Tactical
+          exercises are commonly found in instructional books, chess magazines,
+          newspaper chess columns, and internet chess sites.
+        </p>
+      </section>
+      <section class="main-section" id="Ressources">
+        <header>Ressources</header>
+        <p></p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+      </section>
+    </main>
+  </body>
+</html>
