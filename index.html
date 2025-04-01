@@ -8,18 +8,63 @@
   </head>
   <body>
     <nav id="navbar">
-      <header>Documentation on Chess</header>
+      <header><h1>Documentation on Chess</h1></header>
       <ol>
-        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#Rules">Rules</a></li>
-        <li><a class="nav-link" href="#Pieces_and_movements">Pieces and movements</a></li>
-        <li><a class="nav-link" href="#MetaGame">MetaGame</a></li>
-        <li><a class="nav-link" href="#Ressources">Ressources</a></li>
+        <li>
+          <h2><a class="nav-link" href="#Introduction">Introduction</a></h2>
+        </li>
+        <li>
+          <h2><a class="nav-link" href="#Rules">Rules</a></h2>
+        </li>
+        <li>
+          <h2>
+            <a class="nav-link" href="#Pieces_and_movements"
+              >Pieces and movements</a
+            >
+          </h2>
+        </li>
+        <li>
+          <h2><a class="nav-link" href="#MetaGame">MetaGame</a></h2>
+          <ol>
+            <li><h3><a class="nav-link" href="#Strategy">Strategy</a></h3></li>
+            <li><h3><a class="nav-link" href="#Tactics">Tactics</a></h3></li>
+            <li><h3><a class="nav-link" href="#Phases">Phases</a></h3>
+            <ol>
+              <li><h4><a class="nav-link" href="#Opening">Opening</a></h4></li>
+              <li><h4><a class="nav-link" href="#Middlegame">Middlegame</a></h4></li>
+              <li><h4><a class="nav-link" href="#Endgame">Endgame</a></h4></li>
+            </ol></li>
+          </ol>
+        </li>
+        <li>
+          <h2><a class="nav-link" href="#Ressources">Ressources</a></h2>
+          <ol>
+            <li><h3><a class="nav-link" href="#Special_moves">Special moves</a></h3>
+              <ol>
+                <li><h4><a class="nav-link" href="#Castle">Castle</a></h4></li>
+                <li><h4><a class="nav-link" href="#Promotion">Promotion</a></h4></li>
+                <li><h4><a class="nav-link" href="#En_passant">En passant</a></h4></li>
+              </ol>
+            </li>
+            <li><h3><a class="nav-link" href="#Material_value">Material value</a></h3></li>
+            <li><h3><a class="nav-link" href="#Tactical_patterns">Tactical patterns</a></h3>
+              <ol>
+                <li><h4><a class="nav-link" href="#Battery">Battery</a></h4></li>
+                <li><h4><a class="nav-link" href="#Fork">Fork</a></h4></li>
+                <li><h4><a class="nav-link" href="#Pin">Pin</a></h4></li>
+                <li><h4><a class="nav-link" href="#Skewer">Skewer</a></h4></li>
+                <li><h4><a class="nav-link" href="#Discovered_attack">Discovered attack</a></h4></li>
+                <li><h4><a class="nav-link" href="#Zwischenzug">Zwischenzug</a></h4></li>
+                <li><h4><a class="nav-link" href="#Sacrifice">Sacrifice</a></h4></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
       </ol>
     </nav>
     <main id="main-doc">
       <section class="main-section" id="Introduction">
-        <header>Introduction</header>
+        <header><h2>Introduction</h2></header>
         <p>
           Chess is an abstract strategy board game for two players which
           involves no hidden information and no elements of chance.
@@ -32,7 +77,7 @@
         </p>
       </section>
       <section class="main-section" id="Rules">
-        <header>Rules</header>
+        <header><h2>Rules</h2></header>
         <p>
           The rules of chess are published by FIDE (Fédération Internationale
           des Échecs; "International Chess Federation"), chess's world governing
@@ -81,64 +126,61 @@
           when having to move is detrimental.
         </p>
       </section>
-      <section class="main-section" id="#Pieces_and_movements">
-        <header>Pieces and movement</header>
-        <h3>Pieces</h3>
+      <section class="main-section" id="Pieces_and_movements">
+        <header><h2>Pieces and movements</h2></header>
         <ul>
           <li>
-            The king moves one square in any direction. There is also a special
-            move called castling which moves the king and a rook. The king is
+            The <em>king</em> moves one square in any direction. There is also a special
+            move called <a href="#Castle">castling</a> which moves the king and a rook. The king is
             the most valuable piece. It is illegal to play any move that puts
             one's king under attack by an opponent piece. A move that attacks
             the king must be parried immediately; if this cannot be done, the
             game is lost.
           </li>
           <li>
-            A rook can move any number of squares along a rank or file. A rook
-            is involved in the king's castling move.
+            A <em>rook</em> can move any number of squares along a rank or file. A rook
+            is involved in the king's <a href="#Castle">castling move</a>.
           </li>
-          <li>A bishop can move any number of squares diagonally.</li>
+          <li>A <em>bishop</em> can move any number of squares diagonally.</li>
           <li>
-            A queen combines the power of a rook and bishop and can move any
+            A <em>queen</em> combines the power of a rook and bishop and can move any
             number of squares along a rank, file, or diagonal.
           </li>
           <li>
-            A knight moves to any of the closest squares that are not on the
+            A <em>knight</em> moves to any of the closest squares that are not on the
             same rank, file, or diagonal. (Thus the move forms an "L"-shape: two
             squares vertically and one square horizontally, or two squares
             horizontally and one square vertically.) The knight is the only
             piece that can leap over other pieces.
           </li>
           <li>
-            A pawn can move forward to the unoccupied square immediately in
+            A <em>pawn</em> can move forward to the unoccupied square immediately in
             front of it on the same file, or on its first move it can optionally
             advance two squares along the same file, provided both squares are
-            unoccupied (diagram dots). A pawn can capture an opponent's piece on
-            a square diagonally in front of it by moving to that square (diagram
-            crosses). It cannot capture a piece while advancing along the same
+            unoccupied. A pawn can capture an opponent's piece on
+            a square diagonally in front of it by moving to that square. It cannot
+            capture a piece while advancing along the same
             file, nor can it move to either square diagonally in front without
-            capturing. Pawns have two special moves: the en passant capture and
-            promotion.
+            capturing. Pawns have two <a href="#Special_moves">special moves</a>: the <a href="#En_passant">en passant capture</a> and
+            <a href="#Promotion">promotion</a>.
           </li>
         </ul>
-        <h3>Sepcial moves</h3>
-        <p></p>
       </section>
       <section class="main-section" id="MetaGame">
-        <header>MetaGame</header>
-        <h3>Strategy</h3>
+        <header><h2>MetaGame</h2></header>
+        <h3 id="Strategy">Strategy</h3>
         <p>
           Chess strategy is concerned with the evaluation of chess positions and
           with setting up goals and long-term plans for future play. During the
           evaluation, players must take into account numerous factors such as
-          the value of the pieces on the board, control of the center and
+          <a href="#Material_value">the value of the pieces on the board</a>, control of the center and
           centralization, the pawn structure, king safety, and the control of
           key squares or groups of squares (for example, diagonals, open files,
           and dark or light squares).
         </p>
         <p>
           The most basic step in evaluating a position is to count the total
-          value of pieces of both sides. The point values used for this purpose
+          <a href="#Material_value">value of pieces of both sides</a>. The point values used for this purpose
           are based on experience; usually, pawns are considered worth one
           point, knights and bishops about three points each, rooks about five
           points (the value difference between a rook and a bishop or knight
@@ -165,7 +207,7 @@
           weaknesses unless they are compensated by another valuable asset (for
           example, by the possibility of developing an attack).
         </p>
-        <h3>Tactics</h3>
+        <h3 id="Tactics">Tactics</h3>
         <p>
           In chess, tactics generally refer to short-term maneuvers – so
           short-term that they can be calculated in advance by a human player.
@@ -176,10 +218,10 @@
           can calculate long sequences of moves.
         </p>
         <p>
-          Theoreticians describe many elementary tactical methods and typical
-          maneuvers, for example: pins, forks, skewers, batteries, discovered
-          attacks (especially discovered checks), zwischenzugs, deflections,
-          decoys, sacrifices, underminings, overloadings, and interferences.
+          Theoreticians describe many <a href="#Tactical_patterns">elementary tactical methods</a> and typical
+          maneuvers, for example: <a href="#Pin">pins</a>, <a href="#Fork">forks</a>, <a href="#Skewer">skewers</a>, <a href="#Battery">batteries</a>, <a href="#Discovered_attack">
+            discovered attacks </a> (especially discovered checks), <a href="#Zwischenzug">zwischenzugs</a>, deflections,
+          decoys, <a href="#Sacrifice">sacrifices</a>, underminings, overloadings, and interferences.
           Simple one-move or two-move tactical actions threats, exchanges of
           material, and double attacks can be combined into longer sequences of
           tactical maneuvers that are often forced from the point of view of one
@@ -197,10 +239,185 @@
           exercises are commonly found in instructional books, chess magazines,
           newspaper chess columns, and internet chess sites.
         </p>
+        <h3 id="Phases">Phases</h3>
+        <p>
+          Chess theory divides chess games into three phases with different sets
+          of strategies: the opening, the middlegame, and lastly the endgame.
+          There is no universally accepted way to delineate the three phases of
+          the game; the middlegame is typically considered to have begun after
+          10–20 moves, and the endgame when only a few pieces remain.
+        </p>
+        <h4 id="Opening">Opening</h4>
+        <p>
+          Competitive players typically learn, memorize, and play
+          well-documented sequences of opening moves. The most common starting
+          moves for White are 1.e4 and 1.d4, which usually lead to substantially
+          different types of positions, and Black has multiple viable responses
+          to both.
+        </p>
+        <p>The fundamental strategic aims of most openings are similar:</p>
+        <ul>
+          <li>
+            <em>Development</em>: moving pieces (particularly bishops and knights)
+            forward to squares on which they are useful (defending, attacking,
+            and controlling important squares) and/or have the potential to take
+            part in future plans and ideas.
+          </li>
+          <li>
+            <em>Control of the center</em>: control of the central squares allows pieces
+            to be moved to any part of the board relatively easily, and can
+            inhibit the mobility of the opponent's pieces.
+          </li>
+          <li>
+            <em>King safety</em>: typically secured by castling; incorrectly timed
+            castling can be wasteful or even harmful, however.
+          </li>
+          <li>
+            <em>Pawn structure</em>: players strive to avoid the creation of pawn
+            weaknesses such as isolated, doubled, or backward pawns and to force
+            such weaknesses in the opponent's position.
+          </li>
+        </ul>
+        <h4 id="Middlegame">Middlegame</h4>
+        <p>
+          The middlegame is the part of the game that starts after the opening.
+          Because the opening theory has ended, players have to form plans based
+          on the features of the position, and at the same time take into
+          account the tactical possibilities of the position. The middlegame is
+          the phase in which most combinations occur. Combinations are a series
+          of tactical moves executed to achieve some gain. Middlegame
+          combinations are often connected with an attack against the opponent's
+          king.
+        </p>
+        <p>
+          Another important strategic question in the middlegame is whether and
+          how to reduce material and transition into an endgame (i.e. simplify).
+          Minor material advantages can generally be transformed into victory
+          only in an endgame, and therefore the stronger side must choose an
+          appropriate way to achieve an ending.
+        </p>
+        <h4 id="Endgame">Endgame</h4>
+        <p>
+          The endgame (also end game or ending) is the stage of the game when
+          there are few pieces left on the board. There are three main strategic
+          differences between earlier stages of the game and the endgame:</p>
+          <ul>
+            <li>
+              Pawns become more important. Endgames often revolve around endeavors
+              to promote a pawn by advancing it to the furthest rank.
+            </li>
+            <li>
+              The king,which requires safeguarding from attack during the middlegame, emerges
+              as a strong piece in the endgame. It is often used to protect its own
+              pawns, attack enemy pawns, and hinder moves of the opponent's king.
+            </li>
+            <li>
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Zugzwang">Zugzwang</a>, a situation in which the player who is to move is forced to
+              incur a disadvantage, is often a factor in endgames but rarely in
+              other stages of the game.
+            </li>
+          </ul>
+        </p>
       </section>
       <section class="main-section" id="Ressources">
-        <header>Ressources</header>
-        <p></p>
+        <header><h2>Ressources</h2></header>
+        <h3 id="Special_moves">Special moves</h3>
+        <h4 id="Castle">Castle</h4>
+        <p>
+          Kings can castle once per game. Castling consists of moving the king
+          two squares toward either rook of the same color, and then placing the
+          rook on the square that the king crossed.
+        </p>
+        <h4 id="Promotion">Promotion</h4>
+        <p>
+          A pawn that advances all the way to the opposite side of the board
+          (the opposing player's first rank) is promoted to another piece of
+          that player's choice of a queen, rook, bishop, or knight of the same
+          color. The pawn is immediately (before the opposing player's next
+          move) replaced by the new piece.
+        </p>
+        <h4 id="En_passant">En passant</h4>
+        <p>
+          When a pawn uses its initial-move option to advance two squares
+          instead of one, and in so doing passes over a square that is attacked
+          by an enemy pawn. That enemy pawn, which would have been able to
+          capture the moving pawn had it advanced only one square, is entitled
+          to capture the moving pawn "in passing" as if it had advanced only one
+          square. The capturing pawn moves into the empty square over which the
+          moving pawn moved, and the moving pawn is removed from the board. The
+          option to capture en passant must be exercised on the move immediately
+          following the double-square pawn advance, or it is lost and may not be
+          made later.
+        </p>
+        <h3 id="Material_value">Material value</h3>
+        <p>
+          Material is a way to measure the strenght of a position. Each piece is
+          assigned a value and the player with more material value overall is
+          considered in a winning position. It can also help to decide wether an
+          exchange of pieces or a sacrifice is worth pursuing. The convention
+          around the value of each piece is defined as :
+        </p>
+        <ul>
+          <li><strong>Pawn</strong>: 1pt.</li>
+          <li><strong>Knight</strong>: 3pt.</li>
+          <li><strong>Bishop</strong>: 3pt.</li>
+          <li><strong>Rook</strong>: 5pt.</li>
+          <li><strong>Queen</strong>: 9pt.</li>
+          <li><strong>King</strong>: Invaluable.</li>
+        </ul>
+        <h3 id="Tactical_patterns">Tactical patterns</h3>
+        <h4 id="Battery">Battery</h4>
+        <p>
+          A formation that consists of two or more pieces on the same rank,
+          file, or diagonal. It is a tactic involved in planning a series of
+          captures to remove the protection of the opponent's king, or to simply
+          gain in the exchanges.
+        </p>
+        <h4 id="Fork">Fork</h4>
+        <p>
+          A tactic in which a piece attacks multiple enemy pieces
+          simultaneously. The attacker usually aims to capture one of the forked
+          pieces. The defender often cannot counter every threat. A fork is most
+          effective when it is forcing, such as when the king is put in check. A
+          fork is a type of double attack.
+        </p>
+        <h4 id="Pin">Pin</h4>
+        <p>
+          A tactic in which a defending piece cannot move out of an attacking
+          piece's line of attack without exposing a more valuable defending
+          piece. Moving the attacking piece to effect the pin is called pinning;
+          the defending piece restricted by the pin is described as pinned. Only
+          a piece that can move any number of squares along a horizontal,
+          vertical, or diagonal line can pin.
+        </p>
+        <h4 id="Skewer">Skewer</h4>
+        <p>
+          An attack upon two pieces in a line similar to a pin. A skewer is the
+          opposite of a pin; the difference is that in a skewer, the more
+          valuable piece is the one under direct attack and the less valuable
+          piece is behind it.
+        </p>
+        <h4 id="Discovered_attack">Discovered attack</h4>
+        <p>
+          A direct attack revealed when one piece moves out of the way of
+          another. Discovered attacks can be extremely powerful, as the piece
+          moved can make a threat independently of the piece it reveals.
+        </p>
+        <h4 id="Zwischenzug">Zwischenzug</h4>
+        <p>
+          A chess tactic in which a player, instead of playing the expected
+          move, first interposes another move posing an immediate threat that
+          the opponent must answer, and only then plays the expected move. It is
+          a move that has a high degree of "initiative".
+        </p>
+        <h4 id="Sacrifice">Sacrifice</h4>
+        <p>
+          A move that gives up a piece with the objective of gaining tactical or
+          positional compensation in other forms. A sacrifice could also be a
+          deliberate exchange of a chess piece of higher value for an opponent's
+          piece of lower value. Any chess piece except the king may be
+          sacrificed.
+        </p>
 
         <!--Necessary to validate freecodecamp certif-->
         <code></code>
