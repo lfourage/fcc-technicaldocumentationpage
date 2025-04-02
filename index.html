@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="src/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="src/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="src/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="src/img/favicon/site.webmanifest" />
     <title>Chess Documentation Page</title>
   </head>
   <body>
     <nav id="navbar">
-      <header><h1>Documentation on Chess</h1></header>
+      <header><h1>Chess Documentation</h1></header>
       <ol>
         <li>
           <h2><a class="nav-link" href="#Introduction">Introduction</a></h2>
@@ -23,42 +29,48 @@
             >
           </h2>
         </li>
-        <li>
+        <li class="dropdown">
           <h2><a class="nav-link" href="#MetaGame">MetaGame</a></h2>
-          <ol>
-            <li><h3><a class="nav-link" href="#Strategy">Strategy</a></h3></li>
-            <li><h3><a class="nav-link" href="#Tactics">Tactics</a></h3></li>
-            <li><h3><a class="nav-link" href="#Phases">Phases</a></h3>
+          <div class="dropdown-content">
             <ol>
-              <li><h4><a class="nav-link" href="#Opening">Opening</a></h4></li>
-              <li><h4><a class="nav-link" href="#Middlegame">Middlegame</a></h4></li>
-              <li><h4><a class="nav-link" href="#Endgame">Endgame</a></h4></li>
-            </ol></li>
-          </ol>
+              <li><h3><a class="nav-link" href="#Strategy">Strategy</a></h3></li>
+              <li><h3><a class="nav-link" href="#Tactics">Tactics</a></h3></li>
+              <li><h3><a class="nav-link" href="#Phases">Phases</a></h3>
+              <div>
+                <ol>
+                  <li><h4><a class="nav-link" href="#Opening">Opening</a></h4></li>
+                  <li><h4><a class="nav-link" href="#Middlegame">Middlegame</a></h4></li>
+                  <li><h4><a class="nav-link" href="#Endgame">Endgame</a></h4></li>
+                </ol>
+              </li>
+            </ol>
+          </div>
         </li>
-        <li>
+        <li class="dropdown">
           <h2><a class="nav-link" href="#Ressources">Ressources</a></h2>
-          <ol>
-            <li><h3><a class="nav-link" href="#Special_moves">Special moves</a></h3>
-              <ol>
-                <li><h4><a class="nav-link" href="#Castle">Castle</a></h4></li>
-                <li><h4><a class="nav-link" href="#Promotion">Promotion</a></h4></li>
-                <li><h4><a class="nav-link" href="#En_passant">En passant</a></h4></li>
-              </ol>
-            </li>
-            <li><h3><a class="nav-link" href="#Material_value">Material value</a></h3></li>
-            <li><h3><a class="nav-link" href="#Tactical_patterns">Tactical patterns</a></h3>
-              <ol>
-                <li><h4><a class="nav-link" href="#Battery">Battery</a></h4></li>
-                <li><h4><a class="nav-link" href="#Fork">Fork</a></h4></li>
-                <li><h4><a class="nav-link" href="#Pin">Pin</a></h4></li>
-                <li><h4><a class="nav-link" href="#Skewer">Skewer</a></h4></li>
-                <li><h4><a class="nav-link" href="#Discovered_attack">Discovered attack</a></h4></li>
-                <li><h4><a class="nav-link" href="#Zwischenzug">Zwischenzug</a></h4></li>
-                <li><h4><a class="nav-link" href="#Sacrifice">Sacrifice</a></h4></li>
-              </ol>
-            </li>
-          </ol>
+          <div class="dropdown-content">
+            <ol>
+              <li><h3><a class="nav-link" href="#Special_moves">Special moves</a></h3>
+                  <ol>
+                    <li><h4><a class="nav-link" href="#Castle">Castle</a></h4></li>
+                    <li><h4><a class="nav-link" href="#Promotion">Promotion</a></h4></li>
+                    <li><h4><a class="nav-link" href="#En_passant">En passant</a></h4></li>
+                  </ol>
+              </li>
+              <li><h3><a class="nav-link" href="#Material_value">Material value</a></h3></li>
+              <li><h3><a class="nav-link" href="#Tactical_patterns">Tactical patterns</a></h3>
+                  <ol>
+                    <li><h4><a class="nav-link" href="#Battery">Battery</a></h4></li>
+                    <li><h4><a class="nav-link" href="#Fork">Fork</a></h4></li>
+                    <li><h4><a class="nav-link" href="#Pin">Pin</a></h4></li>
+                    <li><h4><a class="nav-link" href="#Skewer">Skewer</a></h4></li>
+                    <li><h4><a class="nav-link" href="#Discovered_attack">Discovered attack</a></h4></li>
+                    <li><h4><a class="nav-link" href="#Zwischenzug">Zwischenzug</a></h4></li>
+                    <li><h4><a class="nav-link" href="#Sacrifice">Sacrifice</a></h4></li>
+                  </ol>
+              </li>
+            </ol>
+          </div>
         </li>
       </ol>
     </nav>
