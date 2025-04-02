@@ -6,12 +6,12 @@
 
 :root {
   --blockcolor: hsl(0, 0%, 0%, 0.897);
-  --lightnavcellcolor: hsla(0, 0%, 20%, 0.808);
+  --lightnavcellcolor: hsl(0, 0%, 20%, 0.808);
   --heavynavcellcolor: hsl(0, 0%, 0%, 0.952);
-  --fontcolor: white;
   --mainsectioncolor: hsl(0, 0%, 0%, 0.829);
   --lightanchorcolor: hsl(118, 72%, 37%, 0.897);
   --heavyanchorcolor: hsl(118, 72%, 37%, 0.616);
+  --fontcolor: white;
 }
 
 body {
@@ -62,6 +62,27 @@ a:hover {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.Piece-list {
+  list-style-type: none;
+}
+
+#Pieces_and_movements li {
+  margin-top: 2rem;
+  min-height: 81px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#Pieces_and_movements img {
+  width: 80px;
+  height: 80px;
+}
+
+#Pieces_and_movements p {
+  vertical-align: middle;
 }
 
 #navbar h2 {

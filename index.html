@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="src/img/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="src/img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="src/img/favicon/favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="src/img/favicon/site.webmanifest" />
+    <link rel="manifest" href="site.webmanifest" />
     <title>Chess Documentation Page</title>
   </head>
   <body>
@@ -140,41 +140,59 @@
       </section>
       <section class="main-section" id="Pieces_and_movements">
         <header><h2>Pieces and movements</h2></header>
-        <ul>
-          <li>
-            The <em>king</em> moves one square in any direction. There is also a special
-            move called <a href="#Castle">castling</a> which moves the king and a rook. The king is
-            the most valuable piece. It is illegal to play any move that puts
-            one's king under attack by an opponent piece. A move that attacks
-            the king must be parried immediately; if this cannot be done, the
-            game is lost.
+        <ul class="Piece-list">
+          
+          <li><img src="src/img/chess_pieces/king-w.svg" alt="White king">
+            <p>
+              The <em>king</em> moves one square in any direction. There is also a special
+              move called <a href="#Castle">castling</a> which moves the king and a rook. The king is
+              the most valuable piece. It is illegal to play any move that puts
+              one's king under attack by an opponent piece. A move that attacks
+              the king must be parried immediately; if this cannot be done, the
+              game is lost.
+            </p>
           </li>
-          <li>
-            A <em>rook</em> can move any number of squares along a rank or file. A rook
-            is involved in the king's <a href="#Castle">castling move</a>.
+          
+          <li><img src="src/img/chess_pieces/rook-w.svg" alt="White rook">
+            <p>
+              A <em>rook</em> can move any number of squares along a rank or file. A rook
+              is involved in the king's <a href="#Castle">castling move</a>.
+            </p>
           </li>
-          <li>A <em>bishop</em> can move any number of squares diagonally.</li>
-          <li>
-            A <em>queen</em> combines the power of a rook and bishop and can move any
-            number of squares along a rank, file, or diagonal.
+          
+          <li><img src="src/img/chess_pieces/bishop-w.svg" alt="White bishop">
+            <p>A <em>bishop</em> can move any number of squares diagonally.</p>
           </li>
-          <li>
-            A <em>knight</em> moves to any of the closest squares that are not on the
-            same rank, file, or diagonal. (Thus the move forms an "L"-shape: two
-            squares vertically and one square horizontally, or two squares
-            horizontally and one square vertically.) The knight is the only
-            piece that can leap over other pieces.
+          
+          <li><img src="src/img/chess_pieces/queen-w.svg" alt="White queen">
+            <p>
+              A <em>queen</em> combines the power of a rook and bishop and can move any
+              number of squares along a rank, file, or diagonal.
+            </p>
           </li>
-          <li>
-            A <em>pawn</em> can move forward to the unoccupied square immediately in
-            front of it on the same file, or on its first move it can optionally
-            advance two squares along the same file, provided both squares are
-            unoccupied. A pawn can capture an opponent's piece on
-            a square diagonally in front of it by moving to that square. It cannot
-            capture a piece while advancing along the same
-            file, nor can it move to either square diagonally in front without
-            capturing. Pawns have two <a href="#Special_moves">special moves</a>: the <a href="#En_passant">en passant capture</a> and
-            <a href="#Promotion">promotion</a>.
+          
+          <li><img src="src/img/chess_pieces/knight-w.svg" alt="White knight">
+            <p>
+              A <em>knight</em> moves to any of the closest squares that are not on the
+              same rank, file, or diagonal. (Thus the move forms an "L"-shape: two
+              squares vertically and one square horizontally, or two squares
+              horizontally and one square vertically.) The knight is the only
+              piece that can leap over other pieces.
+            </p>
+          </li>
+          
+          <li><img src="src/img/chess_pieces/pawn-w.svg" alt="White pawn">
+            <p>
+              A <em>pawn</em> can move forward to the unoccupied square immediately in
+              front of it on the same file, or on its first move it can optionally
+              advance two squares along the same file, provided both squares are
+              unoccupied. A pawn can capture an opponent's piece on
+              a square diagonally in front of it by moving to that square. It cannot
+              capture a piece while advancing along the same
+              file, nor can it move to either square diagonally in front without
+              capturing. Pawns have two <a href="#Special_moves">special moves</a>: the <a href="#En_passant">en passant capture</a> and
+              <a href="#Promotion">promotion</a>.
+            </p>
           </li>
         </ul>
       </section>
