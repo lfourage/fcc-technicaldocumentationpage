@@ -86,7 +86,7 @@ a:hover {
 #navbar li {
   border-top: 1px solid var(--fontcolor);
   box-shadow: 1px 3px 5px black;
-  padding-top: 4px;
+  padding: 4px;
   padding-bottom: 4px;
   background-color: var(--heavynavcellcolor);
 }
@@ -124,8 +124,14 @@ a:hover {
   border-radius: 15px;
 }
 
+.main-section h3 {
+  margin: 0.5rem 0.5rem;
+}
+
 .main-section p,
-.main-section ul {
+.main-section ul,
+.main-section li,
+.main-section h4 {
   margin: 0.5rem 1rem;
 }
 
@@ -135,20 +141,21 @@ a:hover {
   list-style-type: none;
 }
 
-#Pieces_and_movements li {
-  margin-top: 2rem;
+.Pieces-list li {
+  margin: 2rem 0;
   min-height: 81px;
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
 
-#Pieces_and_movements img {
+.Pieces-list img {
   width: 80px;
   height: 80px;
 }
 
-#Pieces_and_movements p {
+.Pieces-list p {
   vertical-align: middle;
 }
 
