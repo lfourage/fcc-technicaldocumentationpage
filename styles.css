@@ -76,19 +76,26 @@ a:hover {
   overflow-x: hidden;
 }
 
+#navbar h1 {
+  padding-top: 1.25rem;
+}
+
 #navbar h2 {
   padding-left: 7%;
   font-size: 1.7rem;
+  padding-top: 1.25rem;
 }
 
 #navbar h3 {
   padding-left: 11%;
   font-size: 1.5rem;
+  padding-top: 1.25rem;
 }
 
 #navbar h4 {
   padding-left: 15%;
   font-size: 1.2rem;
+  padding-top: 1.25rem;
 }
 
 #navbar li {
